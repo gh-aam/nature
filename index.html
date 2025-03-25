@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Navbar</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <script src="./src/script.js"></script>
+</head>
+
+<body>
+  <nav class="bg-gray-800 p-4 shadow-md fixed w-full">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="text-white text-xl font-bold tracking-tight">Nature</a>
+      
+      <!-- Hamburger Button (Mobile) -->
+      <button class="text-white md:hidden focus:outline-none focus:ring-2 focus:ring-gray-600 rounded" id="menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      
+      <!-- Menu Links -->
+      <div class="hidden md:flex space-x-8" id="menu">
+        <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">Home</a>
+        <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">About</a>
+        <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">Services</a>
+        <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">Contact</a>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="flex flex-col space-y-4 p-4">
+        <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">Home</a>
+        <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">About</a>
+        <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">Services</a>
+        <a href="#" class="text-white hover:text-gray-300 transition-colors duration-200">Contact</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Cards -->
+  <div class="container mx-auto p-4">
+    <div id="cardsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-14"></div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4 shadow-md">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm">&copy; 2025 Undefined LLC. All rights reserved.</p>
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+          <a href="#" class="text-gray-400 hover:text-white transition">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
