@@ -5,8 +5,8 @@
 
 ## Features
 - **Responsive Design**: The project is fully responsive and works seamlessly on all devices, from mobile phones to desktops.
-- **Tailwind CSS**: Utilizes `Tailwind CSS` for fast and efficient styling.
-- **JavaScript Interactivity**: `Vanilla JavaScript` is used to add dynamic and interactive elements to the project.
+- **Efficient Styling**: Utilizes `Tailwind CSS` for fast and efficient styling.
+- **Interactivity**: `Vanilla JavaScript` is used to add dynamic and interactive elements to the project.
 - **Modern Web Technologies**: Built with `HTML5`, `CSS3`, and `JavaScript ES6+`.
 
 ## Demo
